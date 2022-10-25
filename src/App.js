@@ -14,21 +14,10 @@ import expert_ai_logo from "./images/expert-ai-logo.png"
 function App() {
 
     const example1 = "Do not tell my boss Viet Thien that I complained here. I am afraid that he will fire me. I" +
-        " need this job to nurture my family. At the Tannery Leather Huan in Hồ Chí Minh city where I work, we have a huge problem with the chemicals. Our boss gives us the animal hides and wants us to clean it. The chemicals are harsh on our skin. The chemical bottle says that we should wear safety gloves. But our boss does not give them to us. When we asked for it once, he screamed, that the gloves are too expensive He was so loud and angry, the I got scared. Everybody scared him. If we do not want to clean the animal hides without gloves, he will find someone else who will. But we need the money, so we stayed. After the work, the water is so dirty from all the animal and chemicals. It stinks a lot, too. Our boss wants us to bring it directly to the river side and dump it there. I feel really ashamed to do this. The waste water stinks and I ruin the river for the local community also needs the water. In the factory is a system to collect the wastewater and transport it to a treatment plant. But we are only allowed to use it when there are audits.";
+        " need this job to nurture my family. At the Tannery Leather Huan in Hồ Chí Minh city where I work, we have a huge problem with the chemical waste management. The factory pollutes the environment with chemical waste. Our boss gives us the animal hides and wants us to clean it. The chemicals are harsh on our skin. The chemical bottle says that we should wear safety gloves. But our boss does not give them to us. When we asked for it once, he screamed, that the gloves are too expensive He was so loud and angry, the I got scared. Everybody scared him. If we do not want to clean the animal hides without gloves, he will find someone else who will. But we need the money, so we stayed. After the work, the water is so dirty from all the animal and chemicals. We dumped the dirty water with all the toxic chemical wate in the river. It stinks a lot, too. I feel really ashamed to do this. The waste water stinks and I ruin the river for the local community also needs the water. Many fish and plants in the river died. In the factory is a system to collect the wastewater and transport it to a treatment plant. But we are only allowed to use it when there are audits.";
     const example2 = "I work in the Sewing ABC factory in Hồ Chí Minh city. We must work so many hours of overtime" +
         " here! It makes us really angry that we work so much for so little money. Our contracts say that we work from 6 am to 6 pm Mondays to Fridays. My co-worker Nhi Le worked here for 4 years, she said she never left the factory on time. But on most days, we cannot finish at 6 pm. The bosses give us just much more work to do! When we say that it is 6 pm, they start to insult us, scream, say that we can be replaced. It is really insulting! We finish on most days between 8 to 9 pm instead of at 6. I live at 37 Bạch Vân, Phường 5, Quận 5, Thành phố Hồ Chí Minh, Vietnam. This is far away from the factory. I often just arrive at 10 pm, this is so late! Also, we must come on many Saturdays as well to finish all the work they force us to do. All these extra hours are not compensated. We get the same salary, no matter what. It makes me so furious that there is no proper compensation for my work. The salary is also given to us in cash instead of via bank transfer. They say, it is better for us with taxes. But I think they just want to hide that they do not pay out our extra hours properly.";
-    const example3 = "The EU has adopted ambitious new targets to curb climate change, with a pledge to make them legally binding.\n" +
-        "\n" +
-        "Under a new law agreed between member states and the EU Parliament, the bloc will cut carbon emissions by at least 55% by 2030, compared with 1990 levels.\n" +
-        "\n" +
-        "The EU parliament had pushed for a higher target of a 60% reduction.\n" +
-        "\n" +
-        "\"Our political commitment to becoming the first climate neutral continent by 2050 is now also a legal one,\" said EU Commission chief Ursula von der Leyen.\n" +
-        "\n" +
-        "\"The Climate Law sets the EU on a green path for a generation.\"\n" +
-        "\n" +
-        "The deal comes ahead of a virtual summit of world leaders later this week, where the US is expected to announce" +
-        " its own climate targets for 2030.";
+    const example3 = "The factory did terminate the contracts of a group of workers, including mine. All cancelled workers are women. They did not give an explanation. However, most of the terminated workers are pregnant. Some, like my coleage Nhi Thien, are already in the sixth month. It is not legal to terminate pregnant workers shortly before they give birth. This is a discrimination in Vietnam and this violates the code of labour. We are very angry that the factory breaks the law and does not comply!";
 
     const [complaintText, setComplaintText] = useState("");
     const [complaintAnalysis, setComplaintAnalysis] = useState(null);
@@ -131,7 +120,8 @@ function App() {
                             </Typography>
                         </Box>}
                         <Typography variant="h6" gutterBottom pt={3}>
-                            powered by <img style={{height:50, marginBottom: -5}} src={expert_ai_logo} alt="expert.ai Logo"/>
+                            powered by <img style={{height: 50, marginBottom: -5}} src={expert_ai_logo}
+                                            alt="expert.ai Logo"/>
                         </Typography>
                         <Typography variant="body1" gutterBottom>
                             This is atlat's submission to expert.ai's hackathon <a
