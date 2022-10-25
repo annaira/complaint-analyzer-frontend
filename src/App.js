@@ -102,7 +102,7 @@ function App() {
                                 <Typography variant="h5" gutterBottom>
                                     ESG Categories
                                 </Typography>
-                                {[...new Set(complaintAnalysis.esgCategories)].map((esgCategory) =>
+                                {[...new Set(complaintAnalysis.esgCategories.filter(v => !!v))].map((esgCategory) =>
                                     <Chip label={esgCategory} color={"primary"} sx={{mr: 1}} variant="outlined"/>)}
                             </>}
 
