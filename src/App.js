@@ -10,8 +10,11 @@ import RadioGroupRating from "./RadioGroupRating";
 import {ThemeProvider} from "@emotion/react";
 import atlat_logo from "./images/atlat_full_logo.png"
 import expert_ai_logo from "./images/expert-ai-logo.png"
+import runtimeEnv from '@mars/heroku-js-runtime-env';
 
 function App() {
+
+    const env = runtimeEnv();
 
     const example1 = "Do not tell my boss Viet Thien that I complained here. I am afraid that he will fire me. I" +
         " need this job to nurture my family. At the Tannery Leather Huan in Hồ Chí Minh city where I work, we have a huge problem with the chemicals. Our boss gives us the animal hides and wants us to clean it. The chemicals are harsh on our skin. The chemical bottle says that we should wear safety gloves. But our boss does not give them to us. When we asked for it once, he screamed, that the gloves are too expensive He was so loud and angry, the I got scared. Everybody scared him. If we do not want to clean the animal hides without gloves, he will find someone else who will. But we need the money, so we stayed. After the work, the water is so dirty from all the animal and chemicals. It stinks a lot, too. Our boss wants us to bring it directly to the river side and dump it there. I feel really ashamed to do this. The waste water stinks and I ruin the river for the local community also needs the water. In the factory is a system to collect the wastewater and transport it to a treatment plant. But we are only allowed to use it when there are audits.";
@@ -36,7 +39,7 @@ function App() {
 
     function analyzeComplaint() {
         setLoading(true);
-        axios.post('http://localhost:8080/complaint-analysis', {
+        axios.post(`${env.REACT_APP_API_URL}/complaint-analysis`, {
             language: "en",
             complaintText: complaintText
         })
